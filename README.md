@@ -109,6 +109,7 @@ app.all '*', (req, res, next) ->
 
 ### 2. Use a local proxy
 
+這個必須要修改, 請參考 bbb24. (Aug2024)
 There's an application that can be used as a local proxy called `api-mate-proxy` available in this
 repository, in the folder [proxy](https://github.com/mconf/api-mate/tree/master/proxy).
 
@@ -131,13 +132,17 @@ Install the dependencies with:
 
 Then compile the source files with:
 
-    [./node_modules/.bin/]cake build
+~~[./node_modules/.bin/]cake build~~
+
+    ./node_modules/coffee-script/bin/cake build
 
 This will compile all files inside `src/` to formats that can be opened in the browser and place them into `/lib`.
 
 To watch for changes and compile the files automatically, run:
 
-    [./node_modules/.bin/]cake watch
+~~[./node_modules/.bin/]cake watch~~
+
+    ./node_modules/coffee-script/bin/cake watch
 
 
 License
